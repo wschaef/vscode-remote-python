@@ -1,0 +1,10 @@
+{
+    "filewatcher.commands": [
+        {
+            "match": "\\.py$",
+            "isAsync": true,
+            "cmd": "echo 'Running Python file' && python ${file}",
+            "event": "onFileChange"
+        }
+    ]
+}

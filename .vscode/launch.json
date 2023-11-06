@@ -16,12 +16,22 @@
             },
             "args": [
                 "run",
-                "--host","0.0.0.0",
-                "--port","9000",
+                "--host",
+                "0.0.0.0",
+                "--port",
+                "9000",
                 "--no-debugger",
                 "--no-reload"
             ],
             "jinja": true
+        },
+        {
+            //run local python file
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
         }
     ]
 }
